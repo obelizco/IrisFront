@@ -1,0 +1,48 @@
+<div style="background: linear-gradient(180deg, #F6F8FF 0%, #EDF0FF 100%);  padding: 60px 20rem;height: 100vh;">
+
+    <div class="flex align-items-center justify-content-center h-full overflow-hidden" id="layout-container">
+        <div class="card-center flex">
+            <div class="col-7 side-left ">
+                <h2 class="subtitle flex flex-column">
+                    <span class="title">IRIS WEB</span>
+
+                </h2>
+            </div>
+            <div class="py-8 col-5 px-0">
+                <form [formGroup]="getForm()" class="flex h-full justify-content-center align-items-center"
+                    (keydown.enter)="$event.preventDefault()">
+
+                    <div class="w-full surface-card  sm:px-8" style="border-radius: 53px">
+                        <div class="text-center">
+                            <div class="welcome font-bold">
+                                Bienvenido
+                            </div>
+                            <span class=" text-xl">Ingresa tus credenciales para iniciar sesión</span>
+                        </div>
+                        <p-divider class="divider-login"></p-divider>
+                        <div>
+                            <label for="email1" class="block text-lg font-medium mb-2">Usuario</label>
+                            <input pInputText type="text" formControlName="userName" placeholder="Ingresar Usuario" pInputText
+                                class=" p-inputtext-sm w-full  mb-4 "  />
+
+                            <label for="password1" class="block text-900 font-medium text-lg mb-2">Contraseña</label>
+                            <p-password formControlName="password" placeholder="Ingresar Contraseña" class="password-custom"
+                                styleClass="mb-5 w-full" inputStyleClass="password-custom" [toggleMask]="true"
+                                [feedback]="false"></p-password>
+
+                            <div class="flex align-items-center justify-content-between mb-5 gap-5">
+                                    <a class="font-medium no-underline ml-2 text-right cursor-pointer"
+                                    >¿Olvidaste tu contraseña?</a>
+                            </div>
+                            <button pButton  type="submit" label="Iniciar sesión" 
+                                class="w-full  button__primary" (click)="login()"></button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p-toast key="toastLogin" position="top-center"></p-toast>

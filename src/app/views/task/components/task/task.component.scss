@@ -1,0 +1,74 @@
+#taskView {
+    height: 100%;
+  
+    .container {
+      .navbar {
+        height: 60px;
+        background-color: #19b2a3;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+  
+        .logoIRIS {
+          height: 30px;
+        }
+      }
+  
+      .view {
+        .title_view {
+          color: #004646;
+        }
+      }
+  
+      .view_group {
+        ::ng-deep p-dropdown {
+          width: 100%;
+  
+          .p-dropdown {
+            width: 100%;
+          }
+        }
+  
+        .addTask {
+          .iconField {
+            cursor: pointer;
+            width: 100%;
+  
+            ::ng-deep .p-icon-field {
+              .p-inputtext {
+                width: 100%;
+              }
+            }
+          }
+        }
+  
+  
+      }
+  
+      .All {
+        .title_All{
+          color: #004646;
+          font-weight: bold;
+        }
+        .container_new_task {
+          display: flex;
+          align-content: center;
+          align-items: center;
+  
+          .item_new {
+            width: 90%;
+            background-color: white;
+            padding: 10px;
+            border-radius: 7px;
+            color: #004646;
+            font-weight: 500;
+          }
+          .icon_fail{
+            color:red;
+            margin-left:20px;
+          }
+        }
+      }
+    }
+  }
+  

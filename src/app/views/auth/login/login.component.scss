@@ -1,0 +1,114 @@
+#layout-container {
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 0px 30px 0px rgba(120, 169, 172, 0.12);
+
+    .card-center {
+        width: 100%;
+        height: 100%;
+        border-radius: 24px;
+        background: #FFF;
+        padding: 30px 0px 30px 30px;
+        box-shadow: 0px 0px 30px 0px rgba(120, 169, 172, 0.12);
+
+        .side-left {
+            border-radius: 16px;
+            background-image: url('../../../../assets/layout/styles/layout/images/login/imagen-login.jpg');
+            padding: 30px 84px 30px 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            .logos-top {
+                position: absolute;
+                right: 20px;
+                top: 30px;
+                img{
+                    width: 150px;
+                }
+            }
+
+            .subtitle {
+                .title{
+                    color: #079DF8;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: bold;
+
+                    margin-bottom: 1rem;
+                }
+                position: absolute;
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 40px;
+                left: 40px;
+                top:  60px;
+                color: #FFF;
+                padding-right: 84px;
+
+            }
+
+            .view-video {
+                height: 66px;
+                width: 177px;
+                left: 60px;
+                background: white;
+                border-radius: 100px;
+                gap: 12px;
+                left: 40px;
+                top: 220px;
+                position: absolute;
+                display: flex;
+                padding: 10px;
+                align-items: center;
+
+                p {
+                    color: #444;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+                .play-button {
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 100px;
+                    background: linear-gradient(180deg, #0AA1FC 0%, #0093EB 100%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+        }
+    }
+
+    .welcome {
+        font-size: 32px;
+    }
+
+    ::ng-deep .password-custom {
+        .p-password {
+            .p-inputtext {
+                width: 100%;
+            }
+        }
+    }
+
+    ::ng-deep .divider-login {
+        .p-divider {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .login-button {
+        background: linear-gradient(180deg, #53C9DA 0%, #49BAD5 100%);
+    }
+
+    @media screen and (min-width: 1445px) {
+        .subtitle{
+            font-size: 3rem !important;
+        }
+    }
+}
