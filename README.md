@@ -1,27 +1,45 @@
-# IrisWeb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+IrisTest 🧾
+This project aims to obtain task list information from the api IrisApi.
 
-## Development server
+Technologies 💻
+Angular 15.0.3 - The web framework used
+PrimeNG - Implementation of PrimeNG in Angular
+PrimeFlex - Implementation of PrimeFlex in Angular
+Getting started ✔️
+These instructions will allow you to get a copy of the project up and running on your local machine for development and testing purposes. See Installation to learn how to deploy the project.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Prerequisites 📋
+In order to run the project, it is necessary to have the Angular CLI installed in version 15.0.3 or later.
 
-## Code scaffolding
+Installation 🔧
+Download and install Angular CLI globally: npm install -g @angular/cli
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clone this repository: git clone https://github.com/obelizco/IrisFront.git.
 
-## Build
+Run npm install from the root of the project.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run ng serve in the terminal from the project root.
 
-## Running unit tests
+_Advantage. 🎉
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Build 🚀
+Run ng build to build the project. The build artifacts will be stored in the dist/ directory. Use the --prod flag for a production build.
 
-## Running end-to-end tests
+Authentication
+Interface where the user can authenticate with the following information:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+UserName
+Password
+Access credentials for authentication :
 
-## Further help
+UserName : o.carreno
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Password : 1234
+
+List of task
+Interface where the user can see all the task in the form of list with basic information such as:
+
+Title
+Description
+Status.
